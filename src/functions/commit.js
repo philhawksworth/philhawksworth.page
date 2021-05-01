@@ -7,7 +7,7 @@ const {
 
 exports.handler = async event => {
 
-  console.log(`Preparing to commit to GitHub`);
+  console.log(`Preparing to commit to GitHub ${GH_PERSONAL_ACCESS_TOKEN}`);
 
   // Authenticate with GitHub via an access token - https://github.com/settings/tokens
   const octokit = new Octokit({
