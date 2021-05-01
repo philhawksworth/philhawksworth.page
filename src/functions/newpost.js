@@ -7,14 +7,17 @@ console.log(`Handling email content from webhook`);
 
 
   
-//   const {
-//     subject,
-//     text,
-//     to,
-//     from,
-//     date,
-//     messageId
-//   } = JSON.parse(event.body)
+  const {
+    subject,
+    text,
+    to,
+    from,
+    date,
+    messageId
+  } = JSON.parse(event.body)
+
+  console.log(subject, date, to.text);
+  
 
 //   console.log(to.value[0].address);
 //   console.log(from.value[0].address);

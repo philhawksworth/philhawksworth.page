@@ -40,7 +40,7 @@ exports.handler = async event => {
     headers: {
       'content-type' : 'application/x-www-form-urlencoded'
     },
-    url: 'http://localhost:8888/api/newpost',
+    url: 'https://philhawksworth-9ddee5.netlify.live/api/newpost',
     body: JSON.stringify(payload)
   }, function(error, response, body){
     console.log(body);
