@@ -8,7 +8,7 @@ exports.handler = async event => {
     "headers": {},
     "text": "This is the body of the email and will be the content of the post\n",
     "textAsHtml": "<p>Test</p>",
-    "subject": "testing webhooks again locally 2",
+    "subject": `testing ${new Date()} `,
     "date": "2000-11-09T18:44:00.000Z",
     "to": {
       "value": [
@@ -36,6 +36,9 @@ exports.handler = async event => {
   };
   
   const rootURL = process.env.DEPLOY_URL ?  process.env.DEPLOY_URL : "https://localhost:8888";
+
+  console.log(`test will post to: ${rootURL}/api/newpost`);
+  
  
   request.post({
     headers: {
