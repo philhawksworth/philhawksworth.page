@@ -74,7 +74,7 @@ exports.handler = async (event) => {
   const path = `src/site/posts/${datestamp}-${slug}.md`;
   const content = `---
 title: ${subject}
-date: ${now}
+date: ${now.toISOString()}
 ---
 ${text}
 `;
