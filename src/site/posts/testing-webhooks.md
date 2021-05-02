@@ -1,1 +1,7 @@
-ûï­ŠÙ^j×¬µø¥{ï¾¶¬Â‹¥u·­…ç(ž×§¶
+
+---
+title: a test file
+---
+
+this would be the contents
+  
