@@ -8,7 +8,7 @@ exports.handler = async event => {
     "headers": {},
     "text": "This is the body of the email and will be the content of the post\n",
     "textAsHtml": "<p>Test</p>",
-    "subject": "testing webhooks",
+    "subject": "testing webhooks again locally 2",
     "date": "2000-11-09T18:44:00.000Z",
     "to": {
       "value": [

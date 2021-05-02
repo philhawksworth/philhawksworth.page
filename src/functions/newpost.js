@@ -48,7 +48,7 @@ async function commitArticle(path, title, content) {
     return status;
   } catch (err) {
     console.log(`Error creating or updating: ${err}`);
-    return null;
+    return;
   }
 };
 

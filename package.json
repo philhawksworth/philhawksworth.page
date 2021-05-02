@@ -4,14 +4,13 @@
   "description": "A basic scaffold for an 11ty site with Sass pipeline and Netlify serverless functions",
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/11ty-with-serverless"
+    "url": "https://github.com/philhawksworth/philhawksworth.page"
   },
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
     "start": "npm run dev",
-    "dev": "ntl dev",
-    "dmc": "ntl dev"
+    "dev": "ntl dev"
   },
   "keywords": [
     "eleventy",
@@ -24,7 +23,7 @@
   "author": "Phil Hawksworth <phil@netlify.com>",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@octokit/rest": "^18.5.3",
     "dotenv": "^8.2.0",
     "js-base64": "^3.6.0",
