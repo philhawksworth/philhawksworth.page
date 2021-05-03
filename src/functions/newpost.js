@@ -35,15 +35,14 @@ async function getSHA(path) {
 
 // Commit the new file or update it if it exists
 async function commitArticle(path, title, content) {
-  const sha = await getSHA(path);
+  // const sha = await getSHA(path);
   try {
     const { status } = await octokit.repos.createOrUpdateFileContents({
       owner: GH_USER,
       repo: GH_REPO,
       path,
       message: `Add post "${title}"`,
-      content: Base64.encode(content),
-      sha
+      content: Base64.encode(content)
     });
     return status;
   } catch (err) {
@@ -65,8 +64,6 @@ exports.handler = async (event) => {
     from,
     messageId
   } = JSON.parse(event.body)
-
-
 
   const now = new Date();
   const datestamp = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
